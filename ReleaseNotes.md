@@ -1,5 +1,5 @@
-# Git for Windows v2.46.2 Release Notes
-Latest update: September 24th 2024
+# Git for Windows v2.47.0 Release Notes
+Latest update: October 8th 2024
 
 ## Introduction
 
@@ -39,6 +39,12 @@ Git for Windows also contains Embedded CAcert Root Certificates. For more inform
 
 Git for Windows is distributed with other components yet, such as Bash, zlib, curl, tcl/tk, perl, MSYS2. Each of these components is governed by their respective license.
 
+## Changes since Git for Windows v2.47.0 (October 8th 2024)
+
+### Bug Fixes
+
+* A regression in v2.47.0 where `git maintenance start` crashed immediately [was fixed](https://github.com/git-for-windows/git/pull/5198).
+
 ## Changes since Git for Windows v2.46.2 (September 24th 2024)
 
 Git for Windows for Windows v2.47 drops support for Windows 7 and for Windows 8, as announced previously.
@@ -47,6 +53,7 @@ Please also note that the 32-bit variant of Git for Windows is deprecated; Its l
 
 ### New Features
 
+* Comes with [Git v2.47.0](https://github.com/git/git/blob/v2.47.0/Documentation/RelNotes/2.47.0.txt).
 * Comes with the MSYS2 runtime (Git for Windows flavor) based on [Cygwin v3.5.4](https://inbox.sourceware.org/cygwin-announce/20240825195526.2571058-1-corinna-cygwin@cygwin.de/), which drops Windows 7 and Windows 8 support.
 * The new, experimental `git backfill` command [was added](https://github.com/git-for-windows/git/pull/5172): It helps fetching relevant Git objects smartly in a partial, sparse clone.
 * The new, experimental [`git survey` command was added](https://github.com/git-for-windows/git/pull/5174). This command is designed to help identify less-than-ideal data shape in monorepos, and it will likely see highly active development. Stay tuned!
